@@ -1,0 +1,6 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Users/allan/Downloads/Alien_Java_SDK_v2.3.5_2014_01/jars/AlienRFID.jar"
+  ]
+}
