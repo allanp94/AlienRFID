@@ -1,6 +1,5 @@
-
-
- /* 
+package src;
+/* 
  TCP/IP address:
   10.9.8.10
  
@@ -24,7 +23,7 @@
  can send messages to a specific machine on the network over a TCP socket, email, serial port
  */
 
-
+ 
 import com.alien.enterpriseRFID.reader.*;
 import com.alien.enterpriseRFID.tags.*;
 
@@ -71,7 +70,7 @@ public class TagReaderTest {
 
     } // end TagReaderTest
 
-    public static final void main(String[] args) {
+    public static  void main(String[] args) {
         System.out.println("hello there");
 
         try {
