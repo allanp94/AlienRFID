@@ -44,16 +44,11 @@ public class TagReaderTest {
         //open connection to the reader
         reader.open();
 
-        long readCount = 0;
-        
-        for (int k = 0; k < 100; k++) {
-
             //read tags from reader and print them 
             Tag tagList[] = reader.getTagList();
             if (tagList == null) {
                 System.out.println("no tags found");
             } else {
-                ++readCount;
 
                 System.out.println("Tag(s) found");
 
@@ -62,8 +57,6 @@ public class TagReaderTest {
                     System.out.println("ID:" + tag.getTagID());
                 }
             }
-
-        }
         
 		// Close the connection
 		reader.close();
@@ -74,7 +67,7 @@ public class TagReaderTest {
         System.out.println("hello there");
 
         try {
-            new TagReaderTest(); 
+            new TagReaderTest();
         } catch (AlienReaderException e) {
             System.out.println("Error: " + e.toString());
         }
